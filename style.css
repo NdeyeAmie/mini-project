@@ -201,5 +201,11 @@ list-style: none;
     .cat{
         font-size: 15px !important;
     }
+    .autres {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
   }
   
