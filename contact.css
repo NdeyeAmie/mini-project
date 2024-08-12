@@ -1,0 +1,22 @@
+@import url("https://fronts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+body,button {
+    font-family: "Inter",sans-serif;
+}
+:root{
+    --offcanvas-width : 270px;
+    --topNavbarHeight: 56px;
+}
+.sidebar-nav{
+    width: var(--offcanvas-width)  !important;
+}
+
+@media (min-width: 992px) {
+    .sidebar-nav {
+  -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+    }
+}

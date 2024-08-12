@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 1 Custom CSS */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+section {
+    padding: 50px 0;
+}
+.navbar {
+    position: fixed;
+    /* top: 0; */
+    z-index: 100;
+    background-color: #FFF;
+    /* border: 1px solid; */
+}
+img {
+    object-fit: cover !important;
+}
+
+.main-btn {
+    display: inline-block;
+    transition: all .4s ease-in-out;
+    padding: 10px 15px;
+    background-color: #e6425e;
+    border: none;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.94px;
+    text-decoration: none;
+}
+
+.main-btn:hover {
+   
+    color: #FFFFFF;
+}
+
+.header_wrapper .nav-item .nav-link {
+    position: relative;
+    font-family: Inter, sans-serif;
+    color: rgba(0, 0, 0, 0.898);
+    display:inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.94px;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#seach {
+    font-size: 30px;
+}
+.active{
+    color: #e6425e !important;
+}
+
+.sous-header ul li {
+list-style: none;
+}
+
+.sous-header ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21.94px;
+}
+.active1:hover{
+   border-bottom: 2px solid #FFF;
+}
+/* -------------------------prooduit---------------------------------------- */
+.produit-heading  {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30.94px;
+}
+.produit-section {
+    padding: 2rem;
+}
+/* ----------------------catagories------------------------ */
+.cate1 {
+    color: #000;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21.94px;
+}
+.size-6 {
+    width: 18%;
+    height: 20px;
+    color: #e6425e;
+}
+
+.progress-bar {
+    width: 60%;
+    height: 20px;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4caf50;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    transition: width 0.3s ease;
+  }
+  
+  .progress-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30px; 
+    background-color: #ccc;
+  }
+  
+  .progress-bar::after {
+    content: "50%"; /* Contenu du pseudo-élément après (facultatif, pour le texte de progression) */
+    position: absolute;
+    top: 0;
+    right: 10px; /* Position du texte (facultatif, ajustez selon vos besoins) */
+    line-height: 20px; /* Alignement vertical du texte (facultatif) */
+  }
+
+  @media screen and (max-width: 768px) {
+    body{
+        border: 1px solid;
+    }
+    .sous-header {
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        gap: 0px !important;
+        font-size: 12px !important;
+    }
+    .resp1 {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 12px !important;
+        font-size: 12px !important;
+    }
+    .resp2 {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 5px !important;
+        font-size: 12px !important;
+    }
+    #fill{
+        display: none;
+    }
+    #lock {
+        display: none; 
+    }
+    .cat{
+        font-size: 15px !important;
+    }
+  }
+  
